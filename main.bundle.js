@@ -1,4 +1,4 @@
-webpackJsonp([1,4],{
+webpackJsonp([2,4],{
 
 /***/ 333:
 /***/ (function(module, exports, __webpack_require__) {
@@ -23,7 +23,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: __webpack_require__(686),
+            template: __webpack_require__(684),
             styles: [__webpack_require__(675)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object])
@@ -182,7 +182,7 @@ __webpack_require__(524);
 __webpack_require__(532);
 __webpack_require__(530);
 __webpack_require__(535);
-__webpack_require__(702);
+__webpack_require__(700);
 //# sourceMappingURL=/Users/druk/Sites/vsphere-automation-sdks/src/src/src/polyfills.js.map
 
 /***/ }),
@@ -195,7 +195,7 @@ exports = module.exports = __webpack_require__(83)();
 
 
 // module
-exports.push([module.i, ".clr-icon.clr-clarity-logo {\n  background-image: url(" + __webpack_require__(677) + "); }\n\n.hero {\n  background-color: #ddd;\n  text-align: center;\n  padding-bottom: 3em;\n  padding-top: 3em;\n  width: 100%; }\n  .hero .btn-custom {\n    display: inline-block;\n    text-align: center;\n    margin: auto; }\n\n.hero-image img {\n  max-width: 468px; }\n\n.icon {\n  display: inline-block;\n  height: 32px;\n  vertical-align: middle;\n  width: 32px; }\n  .icon.icon-github {\n    background: url(" + __webpack_require__(676) + ") no-repeat left 1px; }\n\n.nav-list li > a {\n  margin-bottom: 1em; }\n\n.section {\n  padding: .5em 0; }\n\n.contributor {\n  border-radius: 50%;\n  border: 1px solid #ccc;\n  margin-bottom: 1.5em;\n  margin-right: 2.5em;\n  max-width: 104px;\n  text-decoration: none; }\n", ""]);
+exports.push([module.i, ".clr-icon.clr-clarity-logo {\n  background-image: url(/vsphere-automation-sdks/images/vmw_oss.svg); }\n\n.hero {\n  background-color: #ddd;\n  text-align: center;\n  padding-bottom: 3em;\n  padding-top: 3em;\n  width: 100%; }\n  .hero .btn-custom {\n    display: inline-block;\n    text-align: center;\n    margin: auto; }\n\n.hero-image img {\n  max-width: 468px; }\n\n.icon {\n  display: inline-block;\n  height: 32px;\n  vertical-align: middle;\n  width: 32px; }\n  .icon.icon-github {\n    background: url(/vsphere-automation-sdks/images/github_icon.svg) no-repeat left 1px; }\n\n.nav-list li > a {\n  margin-bottom: 1em; }\n\n.section {\n  padding: .5em 0; }\n\n.contributor {\n  border-radius: 50%;\n  border: 1px solid #ccc;\n  margin-bottom: 1.5em;\n  margin-right: 2.5em;\n  max-width: 104px;\n  text-decoration: none; }\n", ""]);
 
 // exports
 
@@ -205,28 +205,14 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 676:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "github_icon.32b052c8ba960083361b.svg";
-
-/***/ }),
-
-/***/ 677:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "vmw_oss.9838d59f7b0d8b8bf59c.svg";
-
-/***/ }),
-
-/***/ 686:
+/***/ 684:
 /***/ (function(module, exports) {
 
 module.exports = "<clr-main-container>\n    <header class=\"header header-6\">\n        <div class=\"branding\">\n            <a href=\"https://vmware.github.io/\" class=\"nav-link\">\n                <span class=\"clr-icon clr-clarity-logo\"></span>\n                <span class=\"title\">VMware&reg; Open Source Program Office</span>\n            </a>\n        </div>\n    </header>\n    <div class=\"hero\">\n        <div class=\"hero-image\"><img src=\"images/vsphere_automation_sdks.png\" alt=\"\"></div>\n        <h3>Software Development Kits for accessing vSphere’s Automation endpoint APIs</h3>\n        <h4>\n            <i class=\"icon icon-github\"></i> Fork vSphere Automation SDKs in:\n            <br>\n            <a href=\"https://github.com/vmware/vsphere-automation-sdk-rest\" class=\"btn btn-primary\">REST</a> <a href=\"https://github.com/vmware/vsphere-automation-sdk-python\" class=\"btn btn-primary\">Python</a>\n        </h4>\n    </div>\n    <div class=\"content-container\">\n        <div class=\"content-area\">\n            <div id=\"section1\" class=\"section\">\n            <h2>Overview</h2>\n\n            <p>The vSphere Automation SDKs bundle client libraries, documentation and sample code for accessing the vSphere Automation endpoint and providing the ability to manage and configure the services provided by this API in a variety of different languages, the services currently include:</p>\n\n            <br>\n\n            <ul>\n                <li>vCenter Server Appliance (VCSA) features</li>\n                <li>Virtual Machine Management</li>\n                <li>Content Library</li>\n                <li>Tagging</li>\n            </ul>\n            </div>\n\n            <div id=\"section2\" class=\"section\">\n            <h2>Getting the SDKs</h2>\n\n            <p>The vSphere Automation SDK’s are available from VMware’s GitHub source repositories. Simply chose the SDK for your preferred language, clone the repo and follow the instructions in the README.md in the root folder of the repo to be up and running in minutes!</p>\n\n            <p>For more information refer to the vSphere Automation SDK Overview.</p>\n\n            <h2>Support</h2>\n\n            <p>The vSphere Automation SDK’s are released as open source software and, presently, provides community support through our GitHub project pages. If you encounter an issue or have a question, feel free to reach out via Github issues.</p>\n            </div>\n\n            <div id=\"section3\" class=\"section\">\n            <h2>Contributors</h2>\n\n            <p>\n                <a title=\"Alan Renouf\" href=\"https://github.com/alanrenouf\"><img class=\"contributor\" alt=\"Alan Renouf\" src=\"https://avatars1.githubusercontent.com/u/4140758?v=3\"></a>\n                <a title=\"Tianhao He\" href=\"https://github.com/tianhao64\"><img class=\"contributor\" alt=\"Tianhao He\" src=\"https://avatars1.githubusercontent.com/u/5871885?v=3\"></a>\n            </p>\n            </div>\n\n            <div id=\"section4\" class=\"section\">\n            <h2>Contributing</h2>\n\n            <p>You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive <a href=\"https://help.github.com/articles/creating-a-pull-request\">pull requests</a>, and do our best to process them as fast as we can. If you wish to contribute code, you should sign <a href=\"https://vmware.github.io/admiral/assets/files/vmware_cla.pdf\" target=\"_blank\">Contributor License Agreement</a> and return a copy to <a href=\"mailto:osscontributions@vmware.com\">osscontributions@vmware.com</a> before we can merge your contribution. For any questions about the CLA process, please refer to our <a href=\"https://cla.vmware.com/faq\">FAQ</a>.</p>\n            <p>Before you start to code, we recommend discussing your plans through a GitHub issue or discuss it first with the official project maintainers via <a href=\"https://vmwarecode.slack.com/messages/vsphere-sdks\">Slack</a>, especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing. Join Slack via <a href=\"https://code.vmware.com/web/code/join\">https://code.vmware.com/web/code/join</a>.</p>\n            </div>\n\n            <div id=\"section5\" class=\"section\">\n            <h2>Licenses</h2>\n\n            <p>VMware’s Automation SDKs are licensed under the MIT License as documented in the LICENSE file found in the root of each SDK distribution.</p>\n            </div>\n\n        </div>\n        <nav class=\"sidenav\" [clr-nav-level]=\"1\">\n            <section class=\"sidenav-content\">\n                <section class=\"nav-group\">\n                    <ul class=\"nav-list\">\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#section1\">Overview</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#section2\">Getting the SDKs</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#section3\">Support</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#section4\">Contributors</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#section5\">Contributing</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#section6\">Licenses</a>\n                        </li>\n                    </ul>\n                </section>\n            </section>\n        </nav>\n    </div>\n</clr-main-container>\n"
 
 /***/ }),
 
-/***/ 704:
+/***/ 702:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(389);
@@ -234,5 +220,5 @@ module.exports = __webpack_require__(389);
 
 /***/ })
 
-},[704]);
+},[702]);
 //# sourceMappingURL=main.bundle.js.map
