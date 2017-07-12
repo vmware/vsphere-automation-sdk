@@ -16,7 +16,7 @@ webpackEmptyContext.id = "./src async recursive";
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<clr-main-container>\n    <header class=\"header header-6\">\n        <div class=\"branding\">\n            <a href=\"https://vmware.github.io/\" class=\"nav-link\">\n                <span class=\"clr-icon vmware-logo\"></span>\n                <span class=\"title\">Open Source Program Office</span>\n            </a>\n        </div>\n    </header>\n    <div class=\"content-container\">\n        <div id=\"content-area\" class=\"content-area\" hash-listener #scrollable>\n            <div class=\"hero\">\n                <div class=\"hero-image\"><img src=\"images/vsphere_automation_sdks.png\" alt=\"\"></div>\n                <h3>Software Development Kits for accessing vSphere’s Automation endpoint APIs</h3>\n                <h4>\n                    <i class=\"icon icon-github\"></i> Fork vSphere Automation SDKs in:\n                    <br>\n                    <a href=\"https://github.com/vmware/vsphere-automation-sdk-rest\" class=\"btn btn-primary\">REST</a> <a href=\"https://github.com/vmware/vsphere-automation-sdk-python\" class=\"btn btn-primary\">Python</a> <a href=\"https://github.com/vmware/vsphere-automation-sdk-java/\" class=\"btn btn-primary\">Java</a> <a href=\"https://github.com/vmware/vsphere-automation-sdk-perl/\" class=\"btn btn-primary\">Perl</a> <a href=\"https://github.com/vmware/vsphere-automation-sdk-.net\" class=\"btn btn-primary\">.Net</a>\n                </h4>\n            </div>\n            <div id=\"overview\" class=\"section\">\n                <h2>Overview</h2>\n\n                <p>The vSphere Automation SDKs bundle client libraries, documentation and sample code for accessing the vSphere Automation endpoint and providing the ability to manage and configure the services provided by this API in a variety of different languages, the services currently include:</p>\n\n                <br>\n\n                <ul>\n                    <li>vCenter Server Appliance (VCSA) features</li>\n                    <li>Virtual Machine Management</li>\n                    <li>Content Library</li>\n                    <li>Tagging</li>\n                </ul>\n            </div>\n\n            <div id=\"gettingTheSDKs\" class=\"section\">\n                <h2>Getting the SDKs</h2>\n\n                <p>The vSphere Automation SDK’s are available from VMware’s GitHub source repositories. Simply chose the SDK for your preferred language, clone the repo and follow the instructions in the README.md in the root folder of the repo to be up and running in minutes!</p>\n\n                <p>For more information refer to the vSphere Automation SDK Overview.</p>\n            </div>\n\n            <div id=\"support\" class=\"section\">\n                <h2>Support</h2>\n\n                <p>The vSphere Automation SDK’s are released as open source software and, presently, provides community support through our GitHub project pages. If you encounter an issue or have a question, feel free to reach out via Github issues.</p>\n            </div>\n\n            <div id=\"contributors\" class=\"section\">\n                <h2>Contributors</h2>\n\n                <br>\n\n                <ul class=\"list-unstyled row\">\n                    <li *ngFor=\"let contributor of contributors\"><a [href]=\"contributor.html_url\"><img [src]=\"contributor.avatar_url\" alt=\"\" class=\"contributor\"></a></li>\n                </ul>\n            </div>\n\n            <div id=\"contributing\" class=\"section\">\n                <h2>Contributing</h2>\n\n                <p>You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive <a href=\"https://help.github.com/articles/creating-a-pull-request\">pull requests</a>, and do our best to process them as fast as we can. If you wish to contribute code, you should sign <a href=\"https://vmware.github.io/admiral/files/vmware_cla.pdf\" target=\"_blank\">Contributor License Agreement</a> and return a copy to <a href=\"mailto:osscontributions@vmware.com\">osscontributions@vmware.com</a> before we can merge your contribution. For any questions about the CLA process, please refer to our <a href=\"https://cla.vmware.com/faq\">FAQ</a>.</p>\n                <p>Before you start to code, we recommend discussing your plans through a GitHub issue or discuss it first with the official project maintainers via <a href=\"https://vmwarecode.slack.com/messages/vsphere-sdks\">Slack</a>, especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing. Join Slack via <a href=\"https://code.vmware.com/web/code/join\">https://code.vmware.com/web/code/join</a>.</p>\n            </div>\n\n            <div id=\"licenses\" class=\"section\">\n                <h2>Licenses</h2>\n\n                <p>VMware’s Automation SDKs are licensed under the MIT License as documented in the LICENSE file found in the root of each SDK distribution.</p>\n            </div>\n\n        </div>\n        <nav class=\"sidenav\" [clr-nav-level]=\"1\">\n            <section class=\"sidenav-content\">\n                <section class=\"nav-group\" [scrollspy]=\"scrollable\">\n                    <label><a class=\"nav-link active\" routerLink=\".\" routerLinkActive=\"active\" fragment=\"overview\">Overview</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"gettingTheSDKs\">Getting the SDKs</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"support\">Support</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"contributors\">Contributors</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"contributing\">Contributing</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"licenses\">Licenses</a></label>\n                </section>\n            </section>\n        </nav>\n    </div>\n</clr-main-container>\n"
+module.exports = "<clr-main-container>\n    <header class=\"header header-6\">\n        <div class=\"branding\">\n            <a href=\"https://vmware.github.io/\" class=\"nav-link\">\n                <span class=\"clr-icon vmware-logo\"></span>\n                <span class=\"title\">Open Source Program Office</span>\n            </a>\n        </div>\n    </header>\n    <div class=\"content-container\">\n        <div id=\"content-area\" class=\"content-area\" hash-listener #scrollable>\n            <div class=\"hero\">\n                <div class=\"hero-image\"><img src=\"images/vsphere_automation_sdks.png\" alt=\"\"></div>\n                <h3>Software Development Kits for accessing vSphere’s Automation endpoint APIs</h3>\n                <h4>\n                    <i class=\"icon icon-github\"></i> Fork vSphere Automation SDKs in:\n                    <br>\n                    <a href=\"https://github.com/vmware/vsphere-automation-sdk-rest\" class=\"btn btn-primary\">REST</a>\n                    <a href=\"https://github.com/vmware/vsphere-automation-sdk-python\" class=\"btn btn-primary\">Python</a>\n                    <a href=\"https://github.com/vmware/vsphere-automation-sdk-java/\" class=\"btn btn-primary\">Java</a>\n                    <a href=\"https://github.com/vmware/vsphere-automation-sdk-perl/\" class=\"btn btn-primary\">Perl</a>\n                    <a href=\"https://github.com/vmware/vsphere-automation-sdk-.net\" class=\"btn btn-primary\">.Net</a>\n                    <a href=\"https://github.com/vmware/vsphere-automation-sdk-ruby\" class=\"btn btn-primary\">Ruby</a>\n                </h4>\n            </div>\n            <div id=\"overview\" class=\"section\">\n                <h2>Overview</h2>\n\n                <p>The vSphere Automation SDKs bundle client libraries, documentation and sample code for accessing the vSphere Automation endpoint and providing the ability to manage and configure the services provided by this API in a variety of different languages, the services currently include:</p>\n\n                <br>\n\n                <ul>\n                    <li>vCenter Server Appliance (VCSA) features</li>\n                    <li>Virtual Machine Management</li>\n                    <li>Content Library</li>\n                    <li>Tagging</li>\n                </ul>\n            </div>\n\n            <div id=\"gettingTheSDKs\" class=\"section\">\n                <h2>Getting the SDKs</h2>\n\n                <p>The vSphere Automation SDK’s are available from VMware’s GitHub source repositories. Simply chose the SDK for your preferred language, clone the repo and follow the instructions in the README.md in the root folder of the repo to be up and running in minutes!</p>\n\n                <p>For more information refer to the vSphere Automation SDK Overview.</p>\n            </div>\n\n            <div id=\"support\" class=\"section\">\n                <h2>Support</h2>\n\n                <p>The vSphere Automation SDK’s are released as open source software and, presently, provides community support through our GitHub project pages. If you encounter an issue or have a question, feel free to reach out via Github issues.</p>\n            </div>\n\n            <div id=\"contributors\" class=\"section\">\n                <h2>Contributors</h2>\n\n                <br>\n\n                <ul class=\"list-unstyled row\">\n                    <li *ngFor=\"let contributor of contributors\"><a [href]=\"contributor.html_url\"><img [src]=\"contributor.avatar_url\" alt=\"\" class=\"contributor\"></a></li>\n                </ul>\n            </div>\n\n            <div id=\"contributing\" class=\"section\">\n                <h2>Contributing</h2>\n\n                <p>You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive <a href=\"https://help.github.com/articles/creating-a-pull-request\">pull requests</a>, and do our best to process them as fast as we can. If you wish to contribute code, you should sign <a href=\"https://vmware.github.io/admiral/files/vmware_cla.pdf\" target=\"_blank\">Contributor License Agreement</a> and return a copy to <a href=\"mailto:osscontributions@vmware.com\">osscontributions@vmware.com</a> before we can merge your contribution. For any questions about the CLA process, please refer to our <a href=\"https://cla.vmware.com/faq\">FAQ</a>.</p>\n                <p>Before you start to code, we recommend discussing your plans through a GitHub issue or discuss it first with the official project maintainers via <a href=\"https://vmwarecode.slack.com/messages/vsphere-sdks\">Slack</a>, especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing. Join Slack via <a href=\"https://code.vmware.com/web/code/join\">https://code.vmware.com/web/code/join</a>.</p>\n            </div>\n\n            <div id=\"licenses\" class=\"section\">\n                <h2>Licenses</h2>\n\n                <p>VMware’s Automation SDKs are licensed under the MIT License as documented in the LICENSE file found in the root of each SDK distribution.</p>\n            </div>\n\n        </div>\n        <nav class=\"sidenav\" [clr-nav-level]=\"1\">\n            <section class=\"sidenav-content\">\n                <section class=\"nav-group\" [scrollspy]=\"scrollable\">\n                    <label><a class=\"nav-link active\" routerLink=\".\" routerLinkActive=\"active\" fragment=\"overview\">Overview</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"gettingTheSDKs\">Getting the SDKs</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"support\">Support</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"contributors\">Contributors</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"contributing\">Contributing</a></label>\n                    <label class=\"bump-down\"><a class=\"nav-link\" routerLink=\".\" fragment=\"licenses\">Licenses</a></label>\n                </section>\n            </section>\n        </nav>\n    </div>\n</clr-main-container>\n"
 
 /***/ }),
 
@@ -79,7 +79,7 @@ AppComponent = __decorate([
 ], AppComponent);
 exports.AppComponent = AppComponent;
 var _a;
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/app/app.component.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/app/app.component.js.map
 
 /***/ }),
 
@@ -127,7 +127,7 @@ AppModule = __decorate([
     })
 ], AppModule);
 exports.AppModule = AppModule;
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/app/app.module.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/app/app.module.js.map
 
 /***/ }),
 
@@ -142,7 +142,7 @@ exports.ROUTES = [
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 exports.ROUTING = router_1.RouterModule.forRoot(exports.ROUTES);
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/app/app.routing.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/app/app.routing.js.map
 
 /***/ }),
 
@@ -157,7 +157,7 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__("./src/app/app.component.ts"));
 __export(__webpack_require__("./src/app/app.module.ts"));
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/app/index.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/app/index.js.map
 
 /***/ }),
 
@@ -174,7 +174,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.environment = {
     production: true
 };
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/environments/environment.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/environments/environment.js.map
 
 /***/ }),
 
@@ -193,7 +193,7 @@ if (environment_1.environment.production) {
     core_1.enableProdMode();
 }
 platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(_1.AppModule);
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/main.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/main.js.map
 
 /***/ }),
 
@@ -221,7 +221,7 @@ __webpack_require__("./node_modules/core-js/es6/set.js");
 __webpack_require__("./node_modules/core-js/es6/reflect.js");
 __webpack_require__("./node_modules/core-js/es7/reflect.js");
 __webpack_require__("./node_modules/zone.js/dist/zone.js");
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/polyfills.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/polyfills.js.map
 
 /***/ }),
 
@@ -250,7 +250,7 @@ var ContributorService = (function () {
         this.http = http;
     }
     ContributorService.prototype.getContributors = function () {
-        // do work to merge three http calls into one observable.
+        // do work to merge http calls into one observable.
         return Observable_1.Observable.forkJoin([
             this.http.get('https://api.github.com/repos/vmware/vsphere-automation-sdk-rest/contributors')
                 .map(function (res) { return res.json(); }),
@@ -261,6 +261,8 @@ var ContributorService = (function () {
             this.http.get('https://api.github.com/repos/vmware/vsphere-automation-sdk-perl/contributors')
                 .map(function (res) { return res.json(); }),
             this.http.get('https://api.github.com/repos/vmware/vsphere-automation-sdk-.net/contributors')
+                .map(function (res) { return res.json(); }),
+            this.http.get('https://api.github.com/repos/vmware/vsphere-automation-sdk-ruby/contributors')
                 .map(function (res) { return res.json(); })
         ])
             .map(function (data) {
@@ -272,6 +274,7 @@ var ContributorService = (function () {
             contributors = contributors.concat(data[2]);
             contributors = contributors.concat(data[3]);
             contributors = contributors.concat(data[4]);
+            contributors = contributors.concat(data[5]);
             // create a uniqueContributors array
             var uniqueContributors = [];
             // filteredContributors filters contributors array, add it to uniqueContributors if its not already there.
@@ -296,7 +299,7 @@ ContributorService = __decorate([
 ], ContributorService);
 exports.ContributorService = ContributorService;
 var _a;
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/services/contributors.service.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/services/contributors.service.js.map
 
 /***/ }),
 
@@ -359,7 +362,7 @@ HashListener = __decorate([
 ], HashListener);
 exports.HashListener = HashListener;
 var _a;
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/utils/hash-listener.directive.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/utils/hash-listener.directive.js.map
 
 /***/ }),
 
@@ -454,7 +457,7 @@ ScrollSpy = __decorate([
 ], ScrollSpy);
 exports.ScrollSpy = ScrollSpy;
 var _a, _b, _c, _d;
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/utils/scrollspy.directive.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/utils/scrollspy.directive.js.map
 
 /***/ }),
 
@@ -497,7 +500,7 @@ UtilsModule = __decorate([
     })
 ], UtilsModule);
 exports.UtilsModule = UtilsModule;
-//# sourceMappingURL=/Users/druk/ID&D Assets/Open Source Software/vsphere-automation-sdks/src/src/src/utils/utils.module.js.map
+//# sourceMappingURL=/Users/strefethen/github/vsphere-automation-sdks/src/src/src/utils/utils.module.js.map
 
 /***/ }),
 
