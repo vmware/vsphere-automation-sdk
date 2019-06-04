@@ -212,58 +212,6 @@
                 </div>
 
                 <div _ngcontent-c0="" class="section" id="contributors">
-                    <h2 _ngcontent-c0="">Contributors</h2>
-
-                    <br _ngcontent-c0="">
-                        <a _ngcontent-c0="" href="https://github.com/strefethen">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars2.githubusercontent.com/u/118724?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/alanrenouf">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars3.githubusercontent.com/u/4140758?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/jrgarcia">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars1.githubusercontent.com/u/59989?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/tianhao64">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars0.githubusercontent.com/u/5871885?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/Cragdoo">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars3.githubusercontent.com/u/21194968?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/kmruddy">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars0.githubusercontent.com/u/4688785?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/lrivallain">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars2.githubusercontent.com/u/778745?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/pgbidkar">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars2.githubusercontent.com/u/14221704?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/travisfinch">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars1.githubusercontent.com/u/505983?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/jobingeo">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars2.githubusercontent.com/u/25379508?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/ggoodvmw">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars2.githubusercontent.com/u/31867535?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/vinpai">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars2.githubusercontent.com/u/19828682?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/kunal-pmj">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars0.githubusercontent.com/u/20678522?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/dnmange">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars0.githubusercontent.com/u/32090981?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/kapil-git-hub">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars1.githubusercontent.com/u/24930819?v=4">
-                        </a>
-                        <a _ngcontent-c0="" href="https://github.com/pablothx-vmware">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="https://avatars3.githubusercontent.com/u/31016343?v=4">
-                        </a>
-                    </ul>
                 </div>
 
                 <div _ngcontent-c0="" class="section" id="contributing">
@@ -327,6 +275,7 @@
             </nav>
         </div>
     </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -337,7 +286,50 @@
 
         ga('create', 'UA-62095720-1', 'auto');
         ga('send', 'pageview');
+        function flattenArray(arr) {
+            return arr.reduce(function (flat, toFlatten) {
+                return flat.concat(Array.isArray(toFlatten) ? flattenArray(toFlatten) : toFlatten);
+            }, []);
+        }
 
+        function removeDuplicates(myArr, prop) {
+            return myArr.filter((obj, pos, arr) => {
+                return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
+            });
+        }
+
+        function mergeContributors(contributors) {
+            contributors = flattenArray(contributors);
+            contributors_unique = removeDuplicates(contributors, "id");
+            return contributors_unique;
+        }
+
+        Promise.all([
+            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-rest/contributors").then(value => value.json()),
+            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-python/contributors").then(value => value.json()),
+            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-java/contributors").then(value => value.json()),
+            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-perl/contributors").then(value => value.json()),
+            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-.net/contributors").then(value => value.json()),
+            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-ruby/contributors").then(value => value.json())
+        ])
+            .then((value) => {
+                contributors = mergeContributors(value);
+                html = `
+                    <h2 _ngcontent-c0="">Contributors</h2>
+                    <br _ngcontent-c0="">
+                `;
+                contributors.forEach(contributor => {
+                    xhtml = `<a _ngcontent-c0="" href="` + contributor.html_url + `">
+                            <img _ngcontent-c0="" alt="" class="contributor" src="` + contributor.avatar_url + `">
+                        </a>`;
+                    html += xhtml;
+                })
+                html += '</ul>';
+                $("#contributors").html(html);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
     </script>
 </body>
 
