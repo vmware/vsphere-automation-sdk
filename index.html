@@ -289,20 +289,17 @@
         
         /*
         input- contributors for all SDKs
-        return- a set containing the login names of all contributors
-                a dictionary with key as login name and html_url and avatar_url as values
+        return- a dictionary with key as login name and html_url and avatar_url as values
         */
-        function getContributorsSet(contributors) {
-            var contributorSet = new Set();
-            var contributorDict = {};
+        function getContributorsDetails(contributors) {
+            var contributorDetails = {};
             contributors.forEach(contributor => {
                 contributor.forEach(element => {
-                    contributorSet.add(element.login);
-                    contributorDict[element.login] = { "html_url": element.html_url, "avatar_url": element.avatar_url };
+                    contributorDetails[element.login] = { "html_url": element.html_url, "avatar_url": element.avatar_url };
                 })
             })
 
-            return [contributorSet, contributorDict];
+            return contributorDetails;
         }
 
         Promise.all([
@@ -314,21 +311,19 @@
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-ruby/contributors").then(value => value.json())
         ])
             .then((value) => {
-                contributors = getContributorsSet(value);
-                contributorSet = contributors[0];
-                contributorDict = contributors[1];
+                contributors = getContributorsDetails(value);
 
                 html = `
                     <h2 _ngcontent-c0="">Contributors</h2>
                     <br _ngcontent-c0="">
                 `;
 
-                contributorSet.forEach(contributor => {
-                    xhtml = `<a _ngcontent-c0="" href="` + contributorDict[contributor].html_url + `">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="` + contributorDict[contributor].avatar_url + `">
+                for(var key in contributors) {
+                    xhtml = `<a _ngcontent-c0="" href="` + contributors[key].html_url + `">
+                            <img _ngcontent-c0="" alt="" class="contributor" src="` + contributors[key].avatar_url + `">
                             </a>`;
                     html += xhtml;
-                })
+                }
                 html += '</ul>';
                 $("#contributors").html(html);
 
