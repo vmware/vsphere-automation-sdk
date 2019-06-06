@@ -286,22 +286,23 @@
 
         ga('create', 'UA-62095720-1', 'auto');
         ga('send', 'pageview');
-        function flattenArray(arr) {
-            return arr.reduce(function (flat, toFlatten) {
-                return flat.concat(Array.isArray(toFlatten) ? flattenArray(toFlatten) : toFlatten);
-            }, []);
-        }
+        
+        /*
+        input- contributors for all SDKs
+        return- a set containing the login names of all contributors
+                a dictionary with key as login name and html_url and avatar_url as values
+        */
+        function getContributorsSet(contributors) {
+            var contributorSet = new Set();
+            var contributorDict = {};
+            contributors.forEach(contributor => {
+                contributor.forEach(element => {
+                    contributorSet.add(element.login);
+                    contributorDict[element.login] = { "html_url": element.html_url, "avatar_url": element.avatar_url };
+                })
+            })
 
-        function removeDuplicates(myArr, prop) {
-            return myArr.filter((obj, pos, arr) => {
-                return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
-            });
-        }
-
-        function mergeContributors(contributors) {
-            contributors = flattenArray(contributors);
-            contributors_unique = removeDuplicates(contributors, "id");
-            return contributors_unique;
+            return [contributorSet, contributorDict];
         }
 
         Promise.all([
@@ -313,19 +314,24 @@
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-ruby/contributors").then(value => value.json())
         ])
             .then((value) => {
-                contributors = mergeContributors(value);
+                contributors = getContributorsSet(value);
+                contributorSet = contributors[0];
+                contributorDict = contributors[1];
+
                 html = `
                     <h2 _ngcontent-c0="">Contributors</h2>
                     <br _ngcontent-c0="">
                 `;
-                contributors.forEach(contributor => {
-                    xhtml = `<a _ngcontent-c0="" href="` + contributor.html_url + `">
-                            <img _ngcontent-c0="" alt="" class="contributor" src="` + contributor.avatar_url + `">
-                        </a>`;
+
+                contributorSet.forEach(contributor => {
+                    xhtml = `<a _ngcontent-c0="" href="` + contributorDict[contributor].html_url + `">
+                            <img _ngcontent-c0="" alt="" class="contributor" src="` + contributorDict[contributor].avatar_url + `">
+                            </a>`;
                     html += xhtml;
                 })
                 html += '</ul>';
                 $("#contributors").html(html);
+
             })
             .catch((err) => {
                 console.log(err);
