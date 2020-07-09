@@ -138,7 +138,6 @@
                     <h4 _ngcontent-c0="">
                         <i _ngcontent-c0="" class="icon icon-github"></i> Fork vSphere Automation SDKs in:
                         <br _ngcontent-c0="">
-                        <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-rest">REST</a>
                         <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-python">Python</a>
                         <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-java/">Java</a>
                         <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-perl/">Perl</a>
@@ -304,7 +303,6 @@
         }
 
         Promise.all([
-            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-rest/contributors").then(value => value.json()),
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-python/contributors").then(value => value.json()),
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-java/contributors").then(value => value.json()),
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-perl/contributors").then(value => value.json()),
