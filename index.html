@@ -140,8 +140,6 @@
                         <br _ngcontent-c0="">
                         <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-python">Python</a>
                         <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-java/">Java</a>
-                        <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-perl/">Perl</a>
-                        <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-.net">.Net</a>
                         <a _ngcontent-c0="" class="btn btn-primary" href="https://github.com/vmware/vsphere-automation-sdk-ruby">Ruby</a>
                     </h4>
                 </div>
@@ -305,8 +303,6 @@
         Promise.all([
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-python/contributors").then(value => value.json()),
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-java/contributors").then(value => value.json()),
-            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-perl/contributors").then(value => value.json()),
-            fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-.net/contributors").then(value => value.json()),
             fetch("https://api.github.com/repos/vmware/vsphere-automation-sdk-ruby/contributors").then(value => value.json())
         ])
             .then((value) => {
