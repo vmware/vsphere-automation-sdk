@@ -54,7 +54,6 @@ For more information refer to the vSphere Automation SDK Overview.
 &nbsp;[6.9.1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.9.1),
 &nbsp;[6.7.1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.7.1),
 &nbsp;[6.7.0](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.7.0),
-
 - [VMware Cloud on AWS vSphere API Reference (latest version)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/cloud)
 - [VMware Cloud on AWS Console API Reference](https://vmware.github.io/vsphere-automation-sdk-python/vmc)
   - [VMware Cloud Disaster Recovery as a Service (VMC DRaaS) API Reference](https://vmware.github.io/vsphere-automation-sdk-python/vmc-draas)
