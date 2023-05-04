@@ -44,8 +44,10 @@ For more information refer to the vSphere Automation SDK Overview.
 
 # Documentation
 #### Python API Documentation:
-- [vSphere API Reference 7.0 U3 (latest)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.3.0/)
+- [vSphere API Reference 7.0 U3 (latest)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.1.0/)
   - Previous vSphere releases:
+&nbsp;[8.0](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.0.1/),
+&nbsp;[7.0 U3](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.3.0/),
 &nbsp;[7.0 U2](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.2.0/),
 &nbsp;[7.0 U1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.1.0/),
 &nbsp;[7.0](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.0.1/),
@@ -65,8 +67,10 @@ for managing AWS underlay networks
   - [NSX VMC AWS Integration](http://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_vmc_aws_integration/python/)
 
 #### Java API Documentation:
-- [vSphere API Reference 7.0 U3 (latest)](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.3.0/vsphereautomation-client-sdk)
+- [vSphere API Reference 7.0 U3 (latest)](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.1.0/vsphereautomation-client-sdk)
   - Previous vSphere releases:
+&nbsp;[8.0](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.0.1/vsphereautomation-client-sdk),
+&nbsp;[7.0 U3](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.3.0/vsphereautomation-client-sdk),
 &nbsp;[7.0 U2](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.2.0/vsphereautomation-client-sdk),
 &nbsp;[7.0 U1](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.1.0/vsphereautomation-client-sdk),
 &nbsp;[7.0](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.0.1/vsphereautomation-client-sdk),
