@@ -44,29 +44,31 @@ For more information refer to the vSphere Automation SDK Overview.
 
 # Documentation
 #### Python API Documentation:
-- [vSphere API Reference 7.0 U3 (latest)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.3.0/)
+- [vSphere API Reference 8.0 U1 (latest)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.1.0/)
   - Previous vSphere releases:
+&nbsp;[8.0](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.0.1/),
+&nbsp;[7.0 U3](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.3.0/),
 &nbsp;[7.0 U2](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.2.0/),
 &nbsp;[7.0 U1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.1.0/),
 &nbsp;[7.0](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.0.1/),
 &nbsp;[6.9.1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.9.1),
 &nbsp;[6.7.1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.7.1),
 &nbsp;[6.7.0](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.7.0),
-&nbsp;[6.6.1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.6.1),
-&nbsp;[6.5](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/6.5)
 - [VMware Cloud on AWS vSphere API Reference (latest version)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/cloud)
 - [VMware Cloud on AWS Console API Reference](https://vmware.github.io/vsphere-automation-sdk-python/vmc)
   - [VMware Cloud Disaster Recovery as a Service (VMC DRaaS) API Reference](https://vmware.github.io/vsphere-automation-sdk-python/vmc-draas)
-- [NSX API Reference](https://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx/python)
-  - [NSX Policy API Reference](https://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_policy/python) -
+- [NSX API Reference](https://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx)
+  - [NSX Policy API Reference](https://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_policy) -
 primary API for managing logical networks
-  - [NSX VMC Cloud Service](https://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_vmc_policy/python) -
+  - [NSX VMC Cloud Service](https://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_vmc_policy) -
 for managing AWS underlay networks
-  - [NSX VMC AWS Integration](http://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_vmc_aws_integration/python/)
+  - [NSX VMC AWS Integration](http://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_vmc_aws_integration)
 
 #### Java API Documentation:
-- [vSphere API Reference 7.0 U3 (latest)](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.3.0/vsphereautomation-client-sdk)
+- [vSphere API Reference 8.0 U1 (latest)](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.1.0/vcenter-bindings)
   - Previous vSphere releases:
+&nbsp;[8.0](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.0.1/vsphereautomation-client-sdk),
+&nbsp;[7.0 U3](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.3.0/vsphereautomation-client-sdk),
 &nbsp;[7.0 U2](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.2.0/vsphereautomation-client-sdk),
 &nbsp;[7.0 U1](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.1.0/vsphereautomation-client-sdk),
 &nbsp;[7.0](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.0.1/vsphereautomation-client-sdk),
@@ -74,7 +76,6 @@ for managing AWS underlay networks
 &nbsp;[6.7.3](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/6.7.3/vsphereautomation-client-sdk),
 &nbsp;[6.7.2](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/6.7.2/vsphereautomation-client-sdk),
 &nbsp;[6.7.1](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/6.7.1/vsphereautomation-client-sdk),
-&nbsp;[6.5.0](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/6.5.0/vsphereautomation-client-sdk)
 - [VMware Cloud on AWS vSphere API Reference (latest version)](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/cloud/vsphereautomation-client-sdk)
 - [VMware Cloud on AWS Console API Reference](https://vmware.github.io/vsphere-automation-sdk-java/vmc)
   - [VMware Cloud Disaster Recovery as a Service (VMC DRaaS) API Reference](https://vmware.github.io/vsphere-automation-sdk-java/vmc-draas)
@@ -95,7 +96,7 @@ for managing AWS underlay networks
   - [NSX-T Global Policy API Reference](https://pkg.go.dev/github.com/vmware/vsphere-automation-sdk-go/services/nsxt-gm)
 
 #### REST API Documentation:
-[vSphere API Reference 7.0 U3 (latest)](https://developer.vmware.com/docs/vsphere-automation/latest/)
+[vSphere API Reference 8.0 U1 (latest)](https://developer.vmware.com/docs/vsphere-automation/latest/)
 [VMware Cloud On AWS Console API](https://developer.vmware.com/apis/vmc/latest/)
 [NSX VMC Policy](https://developer.vmware.com/apis/nsx-vmc-policy/latest/)
 [NSX VMC AWS Integration API](https://developer.vmware.com/apis/600#/)
