@@ -4,7 +4,7 @@
 <h1>Software Development Kits for accessing vSphere, NSX-T &
 VMware Cloud Service APIs</h1>
 <p>
-<img src="images/github_icon.svg" width="30px" height="30px"><br/>
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30px" height="30px"><br/>
 Fork vSphere Automation SDKs in
 </p>
 <a href="https://github.com/vmware/vsphere-automation-sdk-java"><img src="https://img.shields.io/static/v1?color=008fd8&label=%20&labelColor=5c5c5c&logo=openjdk&logoColor=ffffff&message=Java&style=for-the-badge" /></a>
