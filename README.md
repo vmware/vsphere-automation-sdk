@@ -44,8 +44,9 @@ For more information refer to the vSphere Automation SDK Overview.
 
 # Documentation
 #### Python API Documentation:
-- [vSphere API Reference 8.0 U1 (latest)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.1.0/)
+- [vSphere API Reference 8.0 U2 (latest)](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.2.0/)
   - Previous vSphere releases:
+&nbsp;[8.0 U1](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.1.0/),
 &nbsp;[8.0](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/8.0.0.1/),
 &nbsp;[7.0 U3](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.3.0/),
 &nbsp;[7.0 U2](https://vmware.github.io/vsphere-automation-sdk-python/vsphere/7.0.2.0/),
@@ -65,8 +66,9 @@ for managing AWS underlay networks
   - [NSX VMC AWS Integration](http://vmware.github.io/vsphere-automation-sdk-python/nsx/nsx_vmc_aws_integration)
 
 #### Java API Documentation:
-- [vSphere API Reference 8.0 U1 (latest)](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.1.0/vcenter-bindings)
+- [vSphere API Reference 8.0 U2 (latest)](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.2.0/vcenter-bindings)
   - Previous vSphere releases:
+&nbsp;[8.0 U1](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.1.0/vcenter-bindings),
 &nbsp;[8.0](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/8.0.0.1/vsphereautomation-client-sdk),
 &nbsp;[7.0 U3](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.3.0/vsphereautomation-client-sdk),
 &nbsp;[7.0 U2](https://vmware.github.io/vsphere-automation-sdk-java/vsphere/7.0.2.0/vsphereautomation-client-sdk),
@@ -96,7 +98,7 @@ for managing AWS underlay networks
   - [NSX-T Global Policy API Reference](https://pkg.go.dev/github.com/vmware/vsphere-automation-sdk-go/services/nsxt-gm)
 
 #### REST API Documentation:
-[vSphere API Reference 8.0 U1 (latest)](https://developer.vmware.com/docs/vsphere-automation/latest/)
+[vSphere API Reference 8.0 U2 (latest)](https://developer.vmware.com/docs/vsphere-automation/latest/)
 [VMware Cloud On AWS Console API](https://developer.vmware.com/apis/vmc/latest/)
 [NSX VMC Policy](https://developer.vmware.com/apis/nsx-vmc-policy/latest/)
 [NSX VMC AWS Integration API](https://developer.vmware.com/apis/600#/)
