@@ -21,6 +21,11 @@ Fork vSphere Automation SDKs in
 </a>
 </div>
 
+## $\color{Red}{\textsf{IMPORTANT NOTICE}}$
+For VCF releases 9.0.0.0 and above, please refer to the new [VCF SDK JAVA](https://github.com/vmware/vcf-sdk-java) and [VCF SDK PYTHON](https://github.com/vmware/vcf-sdk-python) repositories for vSphere libraries.
+
+For NSX libraries, refer to the [VMware NSX for Java](https://developer.broadcom.com/sdks/vmware-nsx-for-java/9.0.0)  and [VMware NSX for Python](https://developer.broadcom.com/sdks/vmware-nsx-for-python/9.0.0) in Broadcom developer portal.
+
 # Overview
 The vSphere Automation SDKs bundle client libraries, documentation and sample
 code for accessing the below services:
